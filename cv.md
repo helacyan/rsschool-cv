@@ -38,3 +38,6 @@ Empty yet.
 * Yanka Kupala State University of Grodno
 * https://learn.javascript.ru
 * Youtube video courses
+
+## English
+- A2 (B1 in process...)
