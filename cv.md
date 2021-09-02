@@ -34,3 +34,7 @@ function towerBuilder(nFloors) {
 ## Experience
 Empty yet.
 
+## Education
+* Yanka Kupala State University of Grodno
+* https://learn.javascript.ru
+* Youtube video courses
