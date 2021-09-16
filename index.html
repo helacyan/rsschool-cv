@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html class='page' lang="en">
 <head>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
     <link rel="stylesheet"
     href="https://fonts.googleapis.com/css?family=Gruppo">
     <meta charset="UTF-8">
@@ -66,7 +69,7 @@
         </div>
         <div class="code-example">
             <h1>Code example</h1>
-            <pre>           
+            <pre><code class="javascript">         
                 function towerBuilder(nFloors) {
                     let space,star, tower = [];
                     for(i = 1; i =&lt; nFloors; i++){
@@ -76,7 +79,7 @@
                     }
                     return tower;
                 }
-            </pre>
+            </code></pre>
         </div>
         <div class="languages-info">
             <h1>Languages</h1>
