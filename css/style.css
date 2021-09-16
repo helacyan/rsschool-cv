@@ -39,24 +39,33 @@
 .top-left {
     position: absolute;
     top: 3%;
-    right: 7%;
-    font-style: italic;
+    right: 8%;
     overflow: hidden;
-    text-shadow:
-      0 0 rgb(93, 160, 214),
-      0 0 yellowgreen,
-      0 0 skyblue;
-    color: transparent;
     transition: all 1s;
-    font-size: 2.5999vw;
+    font-size: 3.9999vw;
+    font-style: normal;
+    font-variant: small-caps;
+    text-transform: lowercase;
+    font-weight: bold;
+    text-decoration: overline solid rgb(68, 68, 68);
+    text-shadow: -1px -1px 0px rgba(255,255,255,0.3), 1px 1px 0px rgba(0,0,0,0.8);
+    color: transparent;
 }
 
-.top-left:hover {
+
+.top-left:after {
+    content: "Andrew Rusinov";
+}
+
+
+.top-left:hover:after {
+    content: "Hello everyone!";
     text-shadow:
     -400px 0 rgb(75, 159, 207),
     400px 0 yellowgreen,
     0 0 skyblue;
 }
+
 
 .photo-info { 
     display: block;
@@ -98,6 +107,7 @@
 
 .contact-item a:hover {
     text-decoration: underline;
+    color: #205abd;
 }
 
 .contact-item:last-child {
@@ -127,6 +137,7 @@
 
 .education-item a:hover {
     text-decoration: underline;
+    color: #205abd;
 }
 
 .education-item:last-child {
@@ -172,9 +183,29 @@
     line-height: 120%;
 }
 
+.work-info { 
+    margin: 0 10% 0 7%;
+    padding: 0;
+    font-size: 1.5999vw;
+    line-height: 120%;
+}
+
+.work-info li { 
+    list-style: circle;
+}
+
+.work-info a {
+    text-decoration: none;
+}
+
+.work-info a:hover {
+    text-decoration: underline;
+    color: #205abd;
+}
+
 .footer {
     display: grid;
-    grid-template-columns: 33% 33% 34%;
+    grid-template-columns: 32% 50% 20%;
     grid-area: footer; 
     width: 90%;
     height: 55%; 
@@ -218,4 +249,16 @@
 .footer-rsschool {
     justify-self: end;
     height: 2em;
+}
+
+.botnav a { 
+    padding-right: 3%;
+    color: white;
+    font-size: 1.2vw;
+    text-decoration: none;
+}
+
+.botnav a:hover { 
+    text-decoration: underline;
+    color: aqua;
 }
