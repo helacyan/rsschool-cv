@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html class='page' lang="en">
 <head>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
     <link rel="stylesheet"
     href="https://fonts.googleapis.com/css?family=Gruppo">
     <meta charset="UTF-8">
@@ -15,12 +18,12 @@
         <div class="photo-info"> 
             <img
             src="img/Photo.png"
-            width="300"
-            height="427"
+            width=130%
+            height=auto
             alt="Photo of Andrew Rusinov"
           />
         </div>
-        <div class="top-left">Andrew Rusinov</div>
+        <div class="top-left"><b></b></div>
         <div  class="contact-info">
             <h1>Contact info</h1>
             <ul>
@@ -47,8 +50,10 @@
     </div>
 
     <div class="right-info">
+        <p><a name="one"></a></p> 
         <div class="about-me"><h1>About me</h1>
             <p class="about-info">At the moment i have a small non-commerce experience of using JS, React and continuing improving in that. I want to achieve high results in my endeavors, make programming as my main favourite hobby, and for that i have a time, energy, ability to pick up things fast, put new goals and achieve them on time.</p></div>
+        <p><a name="two"></a></p> 
         <div class="skills-info">
             <h1>Skills</h1>
             <ul>
@@ -60,13 +65,15 @@
                 <li>Webpack</li>
             </ul>
         </div>
+        <p><a name="three"></a></p> 
         <div class="experience-info">
             <h1>Experience</h1>
             <p>Empty yet.</p>
         </div>
+        <p><a name="four"></a></p> 
         <div class="code-example">
             <h1>Code example</h1>
-            <pre>           
+            <pre><code class="javascript">         
                 function towerBuilder(nFloors) {
                     let space,star, tower = [];
                     for(i = 1; i =&lt; nFloors; i++){
@@ -76,20 +83,43 @@
                     }
                     return tower;
                 }
-            </pre>
+            </code></pre>
         </div>
+        <p><a name="five"></a></p> 
         <div class="languages-info">
             <h1>Languages</h1>
             <p>A2 (B1 in process…)</p>
+        </div>
+        <p><a name="six"></a></p> 
+        <div class="work-info">
+            <h1>My works</h1>
+            <ol><b>
+            <li><a href="https://codepen.io/helacyan/pen/RwVroOO">Snake Board</a></li>
+            <li><a href="https://codepen.io/helacyan/pen/BaRjQgy">Cards</a></li>
+            <li><a href="https://codepen.io/helacyan/pen/MWmKbNm">Small Todo</a></li>
+            <li><a href="https://codepen.io/helacyan/pen/poPgRze">AimGame</a></li>
+            <li><a href="https://github.com/helacyan">Here some other code experience</a></li>
+        </b>
+        </ol>
         </div>
     </div>
     <footer class="footer">
         <a class="footer-github" href="https://github.com/helacyan">
             My GitHub
-          </a>
-          <p class="footer-year">2021</p>
+        </a>
+        <div class="botnav">
+            <a href="#one" class="active">About me</a>
+            <a href="#two">Skills</a>
+            <a href="#three">Experience</a>
+            <a href="#four">Code example</a>
+            <a href="#five">Languages</a>
+            <a href="#six">My works</a>
+              <i class="fa fa-bars"></i>
+            </a>
+            <p class="footer-year">2021</p>
+          </div>
           <a class="footer-rsschool" href="https://rs.school/js/">
-            <img src="img/rs.svg" width="86" height="32" alt="RS School">
+            <img src="img/rs.svg" width=70em height=30em alt="RS School">
           </a>
     </footer></div>
 </body>
