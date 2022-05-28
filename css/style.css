@@ -8,13 +8,96 @@
 
 .container {
     display: grid;
-    grid-template-columns: 32% 68%; 
-    grid-template-rows: 150% -1% 6%; 
+    height: auto;
+    grid-template-columns: 32% 68%;
+    grid-template-rows: 150% -1% 6%;
     gap: 0 0;
-    grid-template-areas: 
+    grid-template-areas:
     "left-info right-info"
-    "left-info right-info"
-    "footer footer"; 
+    "footer footer";
+}
+
+@media only screen and (max-width: 1000px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0px 0px;
+        grid-template-areas:
+          "left-info"
+          "right-info"
+          "footer";
+    }
+
+    .top-left {
+        display: none;
+    }
+
+    .photo-info {
+        width: 30vw;
+        height: auto;
+    }
+
+    .left-info {
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    .education-item {
+        font-size: 2.2999vw !important;
+        margin: 0 !important;
+        margin-top: 10px !important;
+    }
+
+    .contact-item {
+        font-size: 2.2999vw !important;
+        margin: 0 !important;
+        margin-top: 10px !important;
+    }
+
+    .about-me {
+        font-size: 2.2999vw !important;
+    }
+
+    .about-info {
+        font-size: 2.2999vw !important;
+    }
+
+    .skills-info {
+        font-size: 2.2999vw !important;
+    }
+
+    .experience-info {
+        font-size: 2.2999vw !important;
+    }
+
+    .code-example {
+        font-size: 2.2999vw !important;
+    }
+
+    .code-example pre {
+        font-size: 2.0999vw !important;
+    }
+
+    .languages-info {
+        font-size: 2.2999vw !important;
+    }
+
+    .work-info {
+        font-size: 2.2999vw !important;
+    }
+
+    .botnav a {
+        font-size: 2.2999vw !important;
+    }
+
+    .footer-year {
+        font-size: 2.2999vw !important;
+    }
+
+    .footer-github {
+        font-size: 2.2999vw !important;
+    }
+
 }
 
 .left-info {
@@ -26,7 +109,7 @@
 }
 
 .right-info {
-    height: 100%;
+    height: auto;
     min-width: 100%;
     grid-area: right-info;
 }
@@ -34,6 +117,7 @@
 .about-info {
     text-align: justify;
     font-size: 1.5999vw;
+    height: auto;
 }
 
 .top-left {
@@ -44,7 +128,7 @@
 	text-shadow: -1px -1px 0px rgba(255,255,255,0.3), 1px 1px 0px rgba(0,0,0,0.8);
     color: transparent;
     transition: all 1s;
-    font-size: 3.9999vw;
+    font-size: 2.9999vw;
     text-decoration: overline solid rgb(68, 68, 68);
     font-style: normal;
     font-variant: small-caps;
@@ -52,11 +136,9 @@
     font-weight: bold;
 }
 
-
 .top-left:after {
     content: "Andrew Rusinov";
 }
-
 
 .top-left:hover:after {
     content: "Hello everyone!";
@@ -66,8 +148,7 @@
     0 0 skyblue;
 }
 
-
-.photo-info { 
+.photo-info {
     display: block;
     margin: 6% 18% 0 18%;
 }
@@ -145,7 +226,9 @@
     margin-bottom: 0;
 }
 
-.about-me {   
+.about-me {
+    height: auto;
+    width: auto;
     margin: 0 10% 0 7%;
     padding: 0;
     font-size: 1.5999vw;
@@ -184,13 +267,13 @@
     line-height: 120%;
 }
 
-.work-info { 
+.work-info {
     margin: 0 10% 0 7%;
     font-size: 1.5999vw;
     line-height: 120%;
 }
 
-.work-info li { 
+.work-info li {
     padding: 0;
     margin: 0;
     line-height: normal;
@@ -201,9 +284,7 @@
     text-decoration: none;
 }
 
-
 .work-info a:hover {
-    /* text-decoration: underline; */
     color: #205abd;
 }
 
@@ -214,9 +295,9 @@
 .footer {
     display: grid;
     grid-template-columns: 32% 50% 20%;
-    grid-area: footer; 
-    width: 90%;
-    height: 55%; 
+    grid-area: footer;
+    width: auto;
+    height: auto;
     align-items: center;
     padding: 2% 6% 2% 3%;
     color: white;
@@ -261,14 +342,14 @@
     height: 2em;
 }
 
-.botnav a { 
+.botnav a {
     padding-right: 3%;
     color: white;
     font-size: 1.2vw;
     text-decoration: none;
 }
 
-.botnav a:hover { 
+.botnav a:hover {
     text-decoration: underline;
     color: aqua;
 }
