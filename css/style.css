@@ -98,6 +98,10 @@
         font-size: 2.2999vw !important;
     }
 
+    .javascript {
+        width: 100vw;
+    }
+
 }
 
 .left-info {
